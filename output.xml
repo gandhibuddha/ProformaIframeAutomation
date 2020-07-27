@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.7.0 on win32)" generated="20200727 15:39:36.994" rpa="false">
+<suite id="s1" name="BC Test" source="C:\Users\Gandhi Buddha.GANDHIB-1LL\PycharmProjects\ProformaIframeAutomation\Test_Suite\BC_Test.robot">
+<test id="s1-t1" name="Configure business cards">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://localhost:8081/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20200727 15:39:39.266" level="INFO">Opening browser 'chrome' to base url 'http://localhost:8081/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20200727 15:39:58.785" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200727 15:39:58.783" endtime="20200727 15:39:58.787"></status>
+</kw>
+<msg timestamp="20200727 15:39:58.808" level="FAIL">SessionNotCreatedException: Message: session not created exception
+from chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18363 x86_64)
+</msg>
+<status status="FAIL" starttime="20200727 15:39:39.265" endtime="20200727 15:39:58.809"></status>
+</kw>
+<status status="FAIL" starttime="20200727 15:39:39.262" endtime="20200727 15:39:58.812" critical="yes">SessionNotCreatedException: Message: session not created exception
+from chrome not reachable
+  (Session info: chrome=84.0.4147.89)
+  (Driver info: chromedriver=2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e),platform=Windows NT 10.0.18363 x86_64)
+</status>
+</test>
+<status status="FAIL" starttime="20200727 15:39:37.002" endtime="20200727 15:39:58.824"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="BC Test">BC Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
